@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            border: 1px solid red;
+            padding: 15px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header col-12">
+        <h1>Laos</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-3">
+            <ul>
+                <li>Voos</li>
+                <li>País</li>
+                <li>A ilha</li>
+                <li>A comida</li>
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <h1>O País City</h1>
+            <p>O Laos,oficialmente República Democrática Popular do Laos (em laosiano: ສາທາລະນະລັດ ປະຊາທິປະໄຕ ປະຊາຊົນລາວ, translit.: Sathalanalat Paxathipatai Paxaxon Lao, é um país do Sudeste Asiático, localizado na Indochina e limitado a norte pela China, a leste pelo Vietnã, a sul pelo Camboja, a sul e oeste pela Tailândia e a noroeste por Myanmar. Sua população foi estimada em 6,5 milhões de habitantes em 2012. </p>
+            <p>A história do Laos é traçada desde o reino de Lan Xang, que existiu do século XIV ao XVIII, quando era dividida em três reinos separados. Em 1893, formou-se um protetorado francês na região, constituído pelos reinos de Luang Phrabang, Vientiane (Vienciana, em português europeu) e Champasak, unindo-se para formar o que hoje é conhecido como Laos. Ele rapidamente ganhou a independência em 1945, após a ocupação japonesa, mas retornou ao domínio francês até que foi concedida sua autonomia em 1949. Laos se tornou independente de facto em 1953, com uma monarquia constitucional governada por Sisavang Vong. Logo após a independência, uma longa guerra civil no país culminou com o fim da monarquia, quando o movimento comunista Pathet Lao chegou ao poder em 1975.</p>
+            <p>Redimensione a janela do navegador para ver como o conteúdo responde ao redimensionamento.<p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

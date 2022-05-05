@@ -1,0 +1,17 @@
+
+/* celulares */
+@media screen and (max-width: 610px) {
+
+    body {
+        background-color: red;  
+    }
+
+    .header {
+        font-size: 16px;
+    } 
+
+    .card {
+        width: 90%;
+    }
+    
+}

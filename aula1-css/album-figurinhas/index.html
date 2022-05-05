@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>ROBOGURINHAS DO IF!</h1>
+        <span id="width"></span>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://robohash.org/104.236.21.134.png" alt="">
+            <h5>robohash 0</h5>
+        </div>
+
+    </div>
+    <!-- fim card-container  -->
+
+    <script>
+
+        var card = document.getElementsByClassName('card')[0];
+
+        for (var i = 1; i <= 9; i++) {
+            var clone = card.cloneNode(true);
+
+            var img = clone.getElementsByTagName('img')[0];
+
+            img.src = 'https://robohash.org/' + parseInt(190 + i % 3) + '.' + parseInt(190 + i) + '.21.134.png';
+
+            clone.getElementsByTagName('h5')[0].innerHTML = 'robohash ' + i;
+
+            document.getElementsByClassName('card-container')[0].appendChild(clone);
+        }
+
+
+        let el = document.getElementById('width');
+        el.innerText = document.documentElement.clientWidth;
+        
+        window.addEventListener('resize', function (event) {
+            // do what you want
+            el.innerText = document.documentElement.clientWidth;
+        }, true);
+
+    </script>
+
+</body>
+
+</html>
